@@ -1,9 +1,9 @@
 # Caching
-#### Cache
+### Cache
 
 In computing, a data storage layer where a subset of data is stored, which operates at high-speed and is transient in nature is known as cache. Here, serving of data access requests are faster and better compared to accessing the data’s primary storage location every now and then. It makes the efficient reuse of previously retrieved or computed data. Starting from CPU to browser to any web app - all software rely on caching to a certain extent to provide blazing fast response. A latency of few milliseconds can lead to a loss of high revenue.
 
-#### Benefits of Caching:
+### Benefits of Caching:
 **Decreased network costs**: Caching of content can be done at various points in the network path between the consumer and origin. If the point is closer to the consumer, there will be no other network activity beyond the cache.
 
 **Improved responsiveness**: Caching enables content to be retrieved faster as there is no need for an entire network round trip. Caches maintained close to the user, like the browser cache, can make this retrieval nearly instantaneous.
@@ -12,14 +12,14 @@ In computing, a data storage layer where a subset of data is stored, which opera
 
 **Availability of content during network interruptions**: With certain policies, caching can be used to serve content to end users, even when it may be unavailable for short time from the origin servers.
 
-#### Key parameters:
+### Key parameters:
 Following are the key parameters based on which the caching strategy is chosen.
 1. Business use-cases like high throughput, low latency
 2. Data consistency threshold
 3. Types of data that are stored like - Objects, Static data, Simple key-value pairs or In-memory data structures
 4. Requirement of an in-process cache or shared cache in a single node or distributed cache for n number of nodes
 5. Requirement of an open-source, commercial, or framework-provided solution
-#### Types of caching
+### Types of caching
 
 **Data Caching**:
 Data Caching is best used for frequent access to data that does not change rapidly. This will help website or application load faster, giving users a better experience. It does this by avoiding extra trips to the DB (DataBase) to retrieve data sets that it knows has not changed.
@@ -34,10 +34,10 @@ Most CMSs have built-in cache mechanisms. Application/Output caching can drastic
 **Distributed Caching**:
 Most high volume systems like Google, YouTube, Amazon and many others use this technique. This approach allows the web servers to pull and store from distributed server’s memory. Once implemented, it allows the web server to simply serve pages and not have to worry about running out of memory. This allows the distributed cache to be made up of a cluster of cheaper machines only serving up memory. Once the cluster is set up, new machines can be added to the memory at any time without disrupting users.
 
-#### Conclusion:
+### Conclusion:
 After doing analysis on caching approaches, for the project which is going through some performance and scaling issues, choosing a proper caching strategy by taking into consideration of the demands at the performance side will help to resolve the issue.
 
-#### References:
+### References:
 * [https://aws.amazon.com/caching/](https://aws.amazon.com/caching/)
 * [https://www.ironistic.com/four-major-caching-types-and-their-differences/](https://www.ironistic.com/four-major-caching-types-and-their-differences/)
 * [https://www.fasthosts.co.uk/blog/caching-methods/](https://www.fasthosts.co.uk/blog/caching-methods/)
